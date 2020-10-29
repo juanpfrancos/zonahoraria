@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            font-family: 'Grandstander', cursive;
+            text-align: center;
+        }
+        h1{
+            color: cadetblue;
+        }
+        h2{
+            color: whitesmoke;
+        }
+    </style>
+    <h1>Ejercicio Diferencias Horarias</h1>
+    <script>
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        
+        document.write("<h2>"+"En Bogotá son las "+h+":"+m+"</h2>");
+
+        d.setHours(d.getHours()+6);
+        document.write("<h2>"+"En Madrid son las "+d.getHours()+":"+m+"</h2>");
+
+        d.setHours(d.getHours()+3);
+        document.write("<h2>"+"En Dubai son las "+d.getHours()+":"+m+"</h2>");
+
+        d.setHours(d.getHours()+ 1, d.getMinutes()+ 30);
+        document.write("<h2>"+"En Nueva Delhi son las "+d.getHours()+":"+d.getMinutes()+"</h2>");
+    </script>
+</body>
+</html>
